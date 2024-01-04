@@ -9,7 +9,7 @@
 
 */
 /*================== 1. Variables =================*/
-::root {
+:root {
     --primary-color: #4555d2;
     --secondary-color: #cc2973;
     --dark-color: #191e47;
@@ -82,6 +82,28 @@ textarea {
     font: inherit;
 }
 
-/*================== 3. Header =================*/
 /*================== 4. Navbar =================*/
+.btn-outline-secondary {
+    color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+    border-radius: 50rem;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--secondary-color);
+    color: #fff !important;
+}
+
+
+/*================== 3. Header =================*/
 /*================== 5. Body =================*/
+
+/*================== 10. Media Queries =================*/
+@media (max-width: 992px) {
+    .navbar .navbar-nav {
+        margin-top: 25px;
+    }
+    .navbar .btn-outline-secondary {
+        margin-top: 25px;
+    }
+}
