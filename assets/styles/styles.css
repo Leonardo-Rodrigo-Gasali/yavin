@@ -1,0 +1,87 @@
+/*
+  Table of Contents
+
+    1. Variables
+    2. Global Styles
+    3. Header
+    4. Navbar
+    5. Body
+
+*/
+/*================== 1. Variables =================*/
+::root {
+    --primary-color: #4555d2;
+    --secondary-color: #cc2973;
+    --dark-color: #191e47;
+    --light-color: #f9fafe;
+    --body-color: #494c52;
+    --heading-color: var(--dark-color);
+}
+
+/*================== 2. Global Styles =================*/
+/* Utilice un modelo de tamaño de caja más intuitivo */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remueve margen padding predeterminado */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Agregar altura de línea accesible. Mejorar la representación del texto */
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Eliminar estilos de lista (viñetas/números) */
+li,
+ol,
+ul,
+menu,
+summary {
+    list-style: none;
+}
+
+/* Desplazamiento suave */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Los elementos que no tienen una clase obtienen estilos predeterminados */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hace que sea más fácil trabajar con imágenes */
+canvas,
+img,
+picture,
+video,
+figure,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Heredar fuentes para entradas y botones */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/*================== 3. Header =================*/
+/*================== 4. Navbar =================*/
+/*================== 5. Body =================*/
