@@ -6,6 +6,8 @@
     3. Header
     4. Navbar
     5. Body
+    10. Media Queries 992px
+    11 Media Queries 576px
 
 */
 /*================== 1. Variables =================*/
@@ -38,7 +40,7 @@
 body {
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
-    height: 1000vh;
+    /*     height: 1000vh; */
 }
 
 /* Eliminar estilos de lista (viñetas/números) */
@@ -107,14 +109,81 @@ textarea {
 
 
 /*================== 3. Header =================*/
+.xl-text {
+    font-size: 75px;
+}
+
+.header .decoration-star {
+    top: 80px;
+    left: -200px;
+    width: 500px;
+    opacity: 0.7;
+}
+
+.header .decoration-star-2 {
+    top: 80px;
+    right: -200px;
+    width: 500px;
+    opacity: 0.7;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 50rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color)
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+    border-radius: 50rem;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: #fff !important;
+}
+
 /*================== 5. Body =================*/
 
-/*================== 10. Media Queries =================*/
+/*================== 10. Media Queries 992px=================*/
 @media (max-width: 992px) {
     .navbar .navbar-nav {
         margin-top: 25px;
     }
+
     .navbar .btn-outline-secondary {
-        margin-top: 25px;
+        margin-top: 20px;
+    }
+
+    .xl-text {
+        font-size: 50px;
+    }
+
+    .header {
+        margin-top: 0px !important;
+        text-align: center;
+    }
+
+    .header .decoration-star {
+        left: -100px;
+        width: 250px;
+    }
+
+    .header .decoration-star-2 {
+        right: -100px;
+        width: 250px;
+    }
+
+    .header .image-container {
+        margin-top: 30px;
     }
 }
+
+/*================== 11. Media Queries 576px=================*/
+@media (max-width: 576px) {}
